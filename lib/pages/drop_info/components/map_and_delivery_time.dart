@@ -25,11 +25,22 @@ class MapAndDeliveryTime extends StatelessWidget {
       child: Stack(
         children: <Widget>[
           Positioned(
-              top: screenHeight * 0.27,
-              right: screenWidth / 2.2,
-              child: CircularProgressIndicator(
-                backgroundColor: kGradColor9,
-              )),
+            top: screenHeight * 0.27,
+            right: 0,
+            left: screenWidth * 0.03,
+            child: Column(
+              children: <Widget>[
+                CircularProgressIndicator(
+                  backgroundColor: kGradColor9,
+                ),
+                SizedBox(height: screenHeight * 0.01),
+                Text(
+                  'Loading map',
+                  style: TextStyle(color: Colors.white54),
+                ),
+              ],
+            ),
+          ),
           Positioned(
             top: screenHeight * 0.035,
             right: 0,

@@ -94,6 +94,16 @@ class DeviceImageAndCard extends StatelessWidget {
                       ],
                     ),
                   ),
+                  Positioned(
+                    right: screenWidth * 0.2,
+                    bottom: screenHeight * 0.1,
+                    left: 0,
+                    child: Image(
+                      image: AssetImage('assets/images/drone.png'),
+                      height: screenHeight * 0.3,
+                      width: screenWidth * 0.7,
+                    ),
+                  ),
                 ],
               ),
             ),
